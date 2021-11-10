@@ -1,0 +1,9 @@
+import 'package:flutter/material.dart';
+
+void showSnackBar({required BuildContext context, required String message}) {
+  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: Text(message),
+      duration: const Duration(seconds: 2),
+      elevation: 6.0,
+      behavior: SnackBarBehavior.floating));
+}
